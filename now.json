@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "builds": [
+        {"src": "./**/*", "use": "@now/static"}
+    ],
+    "alias": "peerjs.com"
+}

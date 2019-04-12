@@ -1,0 +1,693 @@
+html {
+  color: #000;
+  background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+ol,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var,
+optgroup {
+  font-style: inherit;
+  font-weight: inherit;
+}
+del,
+ins {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+caption,
+th {
+  text-align: left;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: baseline;
+}
+sub {
+  vertical-align: baseline;
+}
+legend {
+  color: #000;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+input,
+button,
+textarea,
+select {
+  font-size: 100%;
+}
+a {
+  outline: none;
+} /* Gets rid of Firefox's dotted borders */
+a img {
+  border: none;
+} /* Gets rid of IE's blue borders */
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #e96151;
+}
+a:hover {
+  color: #d94938;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 10px 0;
+  padding: 5px 0 0 0;
+}
+
+h2 {
+  margin: 40px 0 15px;
+}
+
+h3 {
+  margin: 10px 0 15px;
+}
+
+p,
+ul,
+ol,
+table,
+dl {
+  margin: 0 0 15px;
+}
+
+.tagline {
+  padding-left: 15px;
+  font-size: 1.2em;
+  color: #e96151;
+}
+#nav .active {
+  border-bottom: 1px dotted #e96151;
+}
+
+tt {
+  background-color: #f2f2f2;
+  padding: 1px 2px;
+}
+
+code,
+tt {
+  font-family: Consolas, Inconsolata, "Bitstream Vera Sans Mono", Menlo, Monaco,
+    "Andale Mono", "Courier New", monospace;
+  font-size: 12px;
+}
+
+pre {
+  margin: 0 0 25px;
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-bottom: 1px dotted #e96151;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Consolas, Inconsolata, "Bitstream Vera Sans Mono", Menlo, Monaco,
+    "Andale Mono", "Courier New", monospace;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #333;
+  min-height: 100%;
+  font-family: Lato;
+  font-weight: normal;
+  color: #454545;
+}
+
+ul li:before {
+  content: "-";
+  position: relative;
+  left: 0px;
+  margin-right: 5px;
+}
+ul li {
+  text-indent: 0px;
+}
+ul li {
+  line-height: 1.4em;
+}
+
+#container {
+  position: relative;
+  margin: 25px auto 0 auto;
+}
+
+@media all and (min-width: 1112px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  #container {
+    width: 80%;
+    max-width: 1000px;
+  }
+  #content {
+    width: 70%;
+    float: left;
+  }
+  .sign {
+    background-size: 50px 50px;
+    font-size: 55px;
+    padding-right: 45px;
+  }
+  #nav {
+    padding-top: 90px;
+  }
+  #nav-wrap {
+    min-width: 250px;
+    float: left;
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 1112px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+  #container {
+    width: 100%;
+    max-width: 830px;
+    min-width: 720px;
+  }
+  #content {
+    width: 75%;
+    float: left;
+  }
+  .sign {
+    background-size: 35px 35px;
+    font-size: 40px;
+    padding-right: 35px;
+  }
+  #nav {
+    padding-top: 90px;
+  }
+  #nav-wrap {
+    min-width: 180px;
+    float: left;
+    width: 25%;
+  }
+}
+
+#content,
+#nav {
+  height: 100%;
+}
+
+#content p {
+  line-height: 1.5em;
+}
+
+/*#content ul li {
+  display: block;
+  background-color: #f8f8f8;
+  padding: 3px 3px 3px 15px;
+  margin-top: 5px;
+}*/
+
+#text {
+  width: 85%;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.sign {
+  font-weight: 900;
+  background-image: url(../media/logo.png.html);
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: right;
+  color: #000;
+  border-bottom: 1px dotted #454545;
+  height: 70px;
+  line-height: 70px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sign {
+    background-image: url(../media/logo_big.png.html);
+  }
+}
+
+.sign .highlight {
+  color: #e96151;
+}
+code .highlight {
+  background-color: yellow;
+}
+
+#nav-wrap {
+  background-color: #fff;
+  text-align: right;
+}
+/* Navigation bar */
+#nav {
+  text-transform: uppercase;
+}
+
+#nav a {
+  padding: 5px 15px 5px 5px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px 2px #ccc;
+  border-bottom: 1px dotted #ccc;
+}
+
+#nav a:hover {
+  color: #e96151;
+}
+
+/* Table formatting */
+.table-header {
+  border-bottom: 1px dotted #e96151;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.table-header .table-column {
+  font-weight: bold;
+}
+
+.table-row {
+  margin-bottom: 2px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.table-column {
+  float: left;
+  padding: 4px 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Dash page */
+#apikeys .col-1 {
+  width: 140px;
+}
+
+#apikeys .col-2 {
+  width: 160px;
+}
+#apikeys .col-3 {
+  float: right;
+}
+
+#apikeys,
+.account {
+  margin-bottom: 25px;
+}
+
+.account .col-1 {
+  width: 200px;
+}
+.account .col-2 {
+}
+.account .col-3 {
+  float: right;
+}
+
+/* Status page */
+.notes-table {
+  margin-bottom: 25px;
+}
+.notes-table .col-1,
+.status-table .col-1 {
+  width: 130px;
+}
+.notes-table .col-2,
+.status-table .col-2 {
+  width: 300px;
+  float: right;
+}
+
+.status-table {
+  margin-bottom: 25px;
+}
+
+.status-table .icon-ok {
+  color: green;
+}
+
+.status-table .icon-remove {
+  color: #666;
+}
+/* User Partial */
+
+#aux-nav {
+  width: 85%;
+  height: 40px;
+  margin-left: 20px;
+  padding-top: 30px;
+  position: relative;
+  border-bottom: 1px dotted #ccc;
+}
+
+#text {
+  margin: 50px 0 100px 0;
+}
+
+#account-menu {
+  display: none;
+  position: absolute;
+  right: -8px;
+  top: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding-top: 35px;
+  width: 138px;
+  z-index: 99;
+}
+.account-menu-item {
+  margin: 2px;
+  padding: 5px 20px 5px 0;
+  text-align: right;
+}
+
+.account-menu-item:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+a .account-menu-item {
+  color: #333;
+}
+
+#account-link {
+  z-index: 100;
+  right: 0;
+  top: 40px;
+  width: 100px;
+  position: absolute;
+  color: #666;
+  line-height: 16px;
+  padding-left: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+#account-link:hover,
+#account-link.active {
+  color: #333;
+}
+
+#login-link {
+  z-index: 100;
+  right: 0;
+  top: 40px;
+  position: absolute;
+  color: #666;
+  line-height: 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+#login-link a {
+  color: #333;
+}
+
+#login-link a:hover {
+  color: #e96151;
+}
+
+/* Forms */
+input[type="text"],
+input[type="password"] {
+  border: 0;
+  font-size: 14px;
+  padding: 8px 6px;
+  border-bottom: 1px dotted #e96151;
+  width: 226px;
+  vertical-align: middle;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.f-row {
+  margin-bottom: 5px;
+  height: 34px;
+}
+
+.f-col1 {
+  float: left;
+  line-height: 35px;
+  text-align: left;
+  height: 34px;
+  margin-right: 25px;
+}
+.f-col2 {
+  width: 238px;
+  float: left;
+  line-height: 35px;
+}
+
+.f-submit-row {
+  text-align: center;
+  margin: 30px 0 25px;
+}
+
+#login-box .f-col1,
+#delete-modal .f-col1,
+#editinfo-modal .f-col1 {
+  width: 100px;
+}
+
+#register-modal .f-col1,
+#deletekey-modal .f-col1,
+#editpass-modal .f-col1 {
+  width: 200px;
+}
+
+#newkey-modal .f-col1,
+#editkey-modal .f-col1 {
+  width: 250px;
+}
+#newkey-modal .f-col2,
+#editkey-modal .f-col2 {
+  width: 60px;
+}
+#newkey-modal input[type="text"],
+#editkey-modal input[type="text"] {
+  width: 50px;
+}
+
+#editplan-modal .f-row {
+  height: 223px;
+}
+
+#editplan-modal .f-col1 {
+  cursor: pointer;
+  width: 277px;
+  padding: 10px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+  height: 200px;
+}
+#editplan-modal .f-col2 {
+  cursor: pointer;
+  width: 172px;
+  padding: 10px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+  height: 200px;
+}
+
+#editplan-modal .f-col1.selected {
+  color: #fff;
+  border-color: #f3aaa1;
+  background-color: #e96151;
+}
+
+#editplan-modal .f-col2.selected {
+  border-color: #eee;
+  background-color: #f8f8f8;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+.cc-col {
+  font-size: 10.5px;
+}
+
+/* Checkout */
+.unmetered-plan {
+  display: none;
+}
+
+.planselect {
+  margin-bottom: 20px;
+}
+
+.downloads {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.downloads h4 {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.download,
+.planchoice {
+  transition: all 300ms;
+  float: left;
+  cursor: pointer;
+  padding: 10px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.download {
+  background-color: #fff;
+  border: 2px solid #e96151;
+  margin: 0 10px 0 0;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.planchoice h2 {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.download:hover {
+  border-color: #d94938;
+  color: #d94938;
+}
+
+.planchoice:hover {
+  opacity: 0.7;
+}
+
+.planchoice.free {
+  color: #fff;
+  width: 210px;
+  margin-right: 10px;
+  background-color: #33b8ff;
+}
+
+.planchoice.unmetered {
+  color: #fff;
+  width: 210px;
+  background-color: #e96151;
+}
+
+/** Team page */
+.person {
+  margin-bottom: 30px;
+}
+.person .img {
+  border-bottom: 4px solid #e96151;
+}
+.person .text {
+}
+
+.person .img {
+  height: 90px;
+  background: left bottom no-repeat;
+  background-size: cover;
+}
+.person h3 {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.person .img#michelle {
+  background-image: url(../media/mb.jpg.html);
+}
+.person .img#eric {
+  background-image: url(../media/ez.jpg.html);
+}
+
+.random_tagline {
+  color: #e96151;
+  font-weight: 700;
+}
+
+.smbuttons {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.warning {
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f8f8;
+}

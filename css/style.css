@@ -336,138 +336,12 @@ code .highlight {
   clear: both;
 }
 
-/* Dash page */
-#apikeys .col-1 {
-  width: 140px;
-}
-
-#apikeys .col-2 {
-  width: 160px;
-}
-#apikeys .col-3 {
-  float: right;
-}
-
-#apikeys,
-.account {
-  margin-bottom: 25px;
-}
-
-.account .col-1 {
-  width: 200px;
-}
-.account .col-2 {
-}
-.account .col-3 {
-  float: right;
-}
-
-/* Status page */
-.notes-table {
-  margin-bottom: 25px;
-}
-.notes-table .col-1,
-.status-table .col-1 {
-  width: 130px;
-}
-.notes-table .col-2,
-.status-table .col-2 {
-  width: 300px;
-  float: right;
-}
-
-.status-table {
-  margin-bottom: 25px;
-}
-
-.status-table .icon-ok {
-  color: green;
-}
-
-.status-table .icon-remove {
-  color: #666;
-}
-/* User Partial */
-
-#aux-nav {
-  width: 85%;
-  height: 40px;
-  margin-left: 20px;
-  padding-top: 30px;
-  position: relative;
-  border-bottom: 1px dotted #ccc;
-}
-
 #text {
   margin: 50px 0 100px 0;
 }
 
-#account-menu {
-  display: none;
-  position: absolute;
-  right: -8px;
-  top: 30px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  padding-top: 35px;
-  width: 138px;
-  z-index: 99;
-}
-.account-menu-item {
-  margin: 2px;
-  padding: 5px 20px 5px 0;
-  text-align: right;
-}
-
-.account-menu-item:hover {
-  background-color: #f8f8f8;
-  cursor: pointer;
-}
-
-a .account-menu-item {
-  color: #333;
-}
-
-#account-link {
-  z-index: 100;
-  right: 0;
-  top: 40px;
-  width: 100px;
-  position: absolute;
-  color: #666;
-  line-height: 16px;
-  padding-left: 20px;
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-#account-link:hover,
-#account-link.active {
-  color: #333;
-}
-
-#login-link {
-  z-index: 100;
-  right: 0;
-  top: 40px;
-  position: absolute;
-  color: #666;
-  line-height: 16px;
-  background-position: left center;
-  background-repeat: no-repeat;
-  text-align: right;
-}
-
-#login-link a {
-  color: #333;
-}
-
-#login-link a:hover {
-  color: #e96151;
-}
-
 /* Forms */
-input[type="text"],
-input[type="password"] {
+input[type="text"] {
   border: 0;
   font-size: 14px;
   padding: 8px 6px;
@@ -475,110 +349,9 @@ input[type="password"] {
   width: 226px;
   vertical-align: middle;
 }
-input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="text"]:focus {
   outline: none;
   background-color: #f9f9f9;
-}
-
-.f-row {
-  margin-bottom: 5px;
-  height: 34px;
-}
-
-.f-col1 {
-  float: left;
-  line-height: 35px;
-  text-align: left;
-  height: 34px;
-  margin-right: 25px;
-}
-.f-col2 {
-  width: 238px;
-  float: left;
-  line-height: 35px;
-}
-
-.f-submit-row {
-  text-align: center;
-  margin: 30px 0 25px;
-}
-
-#login-box .f-col1,
-#delete-modal .f-col1,
-#editinfo-modal .f-col1 {
-  width: 100px;
-}
-
-#register-modal .f-col1,
-#deletekey-modal .f-col1,
-#editpass-modal .f-col1 {
-  width: 200px;
-}
-
-#newkey-modal .f-col1,
-#editkey-modal .f-col1 {
-  width: 250px;
-}
-#newkey-modal .f-col2,
-#editkey-modal .f-col2 {
-  width: 60px;
-}
-#newkey-modal input[type="text"],
-#editkey-modal input[type="text"] {
-  width: 50px;
-}
-
-#editplan-modal .f-row {
-  height: 223px;
-}
-
-#editplan-modal .f-col1 {
-  cursor: pointer;
-  width: 277px;
-  padding: 10px;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  border-radius: 2px;
-  height: 200px;
-}
-#editplan-modal .f-col2 {
-  cursor: pointer;
-  width: 172px;
-  padding: 10px;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  border-radius: 2px;
-  height: 200px;
-}
-
-#editplan-modal .f-col1.selected {
-  color: #fff;
-  border-color: #f3aaa1;
-  background-color: #e96151;
-}
-
-#editplan-modal .f-col2.selected {
-  border-color: #eee;
-  background-color: #f8f8f8;
-}
-
-.error-msg {
-  display: none;
-  color: red;
-}
-
-.cc-col {
-  font-size: 10.5px;
-}
-
-/* Checkout */
-.unmetered-plan {
-  display: none;
-}
-
-.planselect {
-  margin-bottom: 20px;
 }
 
 .downloads {
@@ -593,8 +366,7 @@ input[type="password"]:focus {
   margin-bottom: 10px;
 }
 
-.download,
-.planchoice {
+.download {
   transition: all 300ms;
   float: left;
   cursor: pointer;
@@ -614,31 +386,9 @@ input[type="password"]:focus {
   border-radius: 5px;
 }
 
-.planchoice h2 {
-  padding: 0;
-  margin-bottom: 5px;
-}
-
 .download:hover {
   border-color: #d94938;
   color: #d94938;
-}
-
-.planchoice:hover {
-  opacity: 0.7;
-}
-
-.planchoice.free {
-  color: #fff;
-  width: 210px;
-  margin-right: 10px;
-  background-color: #33b8ff;
-}
-
-.planchoice.unmetered {
-  color: #fff;
-  width: 210px;
-  background-color: #e96151;
 }
 
 /** Team page */
@@ -660,10 +410,10 @@ input[type="password"]:focus {
 }
 
 .person .img#michelle {
-  background-image: url(../media/mb.jpg.html);
+  background-image: url(../media/mb.jpg);
 }
 .person .img#eric {
-  background-image: url(../media/ez.jpg.html);
+  background-image: url(../media/ez.jpg);
 }
 
 .random_tagline {

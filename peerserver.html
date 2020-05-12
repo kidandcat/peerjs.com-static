@@ -3,9 +3,9 @@
 
 <head>
   <title>
-    
-      PeerJS - Sign up for PeerServer Cloud
-        
+
+    PeerJS - Sign up for PeerServer Cloud
+
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Language" content="en-us">
@@ -16,22 +16,17 @@ library peer js nodejs node javascript">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/fonts.css" rel="stylesheet" type="text/css">
   <link href="css/button.css" rel="stylesheet" type="text/css">
-  <link href="css/reveal.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900italic' rel='stylesheet' type='text/css'>
 
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.reveal.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/account.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
   <link rel="shortcut icon" href="media/favicon.ico.html" />
 </head>
 
 <body>
 
   <a href="https://github.com/peers" id="gh-link">
-    <img style="z-index: 9999;position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
-      alt="Fork me on GitHub">
+    <img style="z-index: 9999;position: absolute; top: 0; right: 0; border: 0;"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
   </a>
   <div id="container">
     <div id="nav-wrap">
@@ -40,39 +35,40 @@ library peer js nodejs node javascript">
         <span class="highlight">JS</span>
       </div>
       <div id="nav">
-        <a href="index.html" >Home</a>
+        <a href="index.html">Home</a>
         <!-- Summary, ideas, brief status. -->
-        <a href="docs.html#start" >Get Started
+        <a href="docs.html#start">Get Started
         </a>
         <a href="docs.html#api">API Reference
         </a>
         <a href="examples.html">Examples
         </a>
         <!-- <a href="/examples" >Examples</a> -->
-        <a href="peerserver.html" class="active"
-          >PeerServer Cloud</a>
-        <a href="team.html" >Team</a>
+        <a href="peerserver.html" class="active">PeerServer Cloud</a>
+        <a href="team.html">Team</a>
       </div>
       <div class="smbuttons">
-        <iframe src="https://ghbtns.com/github-btn.html?user=peers&repo=peerjs&type=watch&count=true" allowtransparency="true" frameborder="0"
-          scrolling="0" width="100" height="20"></iframe>
-        <a href="https://twitter.com/peerjsteam" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @peerjsteam</a>
+        <iframe src="https://ghbtns.com/github-btn.html?user=peers&repo=peerjs&type=watch&count=true"
+          allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+        <a href="https://twitter.com/peerjsteam" class="twitter-follow-button" data-show-count="false"
+          data-lang="en">Follow @peerjsteam</a>
       </div>
     </div>
     <div id="content">
       <div id="aux-nav">
-        
-    <div></div>
-    
+
+        <div></div>
+
       </div>
       <div id="text">
         <h2>PeerServer Cloud service</h2>
-<p>If you DON'T specify 'host' and 'key' options, you will automatically connect to PeerServer Cloud service. Please be aware
-  that you will be sharing it with other people and IDs may collide if you set them manually.</p>
-<p>If you want to use WSS, use the latest
-  <a href="https://github.com/peers/peerjs/raw/master/dist/peer.min.js">peer.min.js</a> from master branch.</p>
+        <p>If you DON'T specify 'host' and 'key' options, you will automatically connect to PeerServer Cloud service.
+          Please be aware
+          that you will be sharing it with other people and IDs may collide if you set them manually.</p>
+        <p>If you want to use WSS, use the latest
+          <a href="https://github.com/peers/peerjs/raw/master/dist/peer.min.js">peer.min.js</a> from master branch.</p>
 
-<!--<h2>PeerServer Cloud service</h2>
+        <!--<h2>PeerServer Cloud service</h2>
 <p>If you don't want to run your own PeerServer, we're offering a cloud hosted PeerServer service.</p>
 <div class="planselect">
   <div class="planchoice free">
@@ -93,68 +89,68 @@ library peer js nodejs node javascript">
 <br>
 -->
 
-    <h3>Help us keep our servers running :)</h3>
-    <button onclick="window.open('https://opencollective.com/peer', '_blank')" class="download">Donate!</button>
-    
+        <h3>Help us keep our servers running :)</h3>
+        <button onclick="window.open('https://opencollective.com/peer', '_blank')" class="download">Donate!</button>
 
-      <script src="js/peerserver.js"></script>
 
-      <div id="register-modal" class="reveal-modal">
-        <a href="peerserver.html#" class="icon-remove close-reveal-modal"></a>
-        <h2>Register for PeerServer Cloud</h2>
-        <p class="error-msg"></p>
-        <div class="f-row">
-          <div class="f-col1">Name / Company name</div>
-          <div class="f-col2">
-            <input type="text" placeholder="Name / Company name" id="name">
-          </div>
-        </div>
-        <div class="f-row">
-          <div class="f-col1">Email address</div>
-          <div class="f-col2">
-            <input type="text" placeholder="Email address" id="email">
-          </div>
-        </div>
-        <div class="f-row">
-          <div class="f-col1">Password</div>
-          <div class="f-col2">
-            <input type="password" placeholder="Password" id="password">
-          </div>
-        </div>
-        <div class="f-row">
-          <div class="f-col1">Confirm password</div>
-          <div class="f-col2">
-            <input type="password" placeholder="Confirm password" id="confirm">
-          </div>
-        </div>
-        <p></p>
-        <div class="f-row free-plan">
-          <div class="f-col1">Selected plan</div>
-          <div class="f-col2">
-            <strong>Free Developer</strong>
-          </div>
-        </div>
-        <div class="f-row free-plan">
-          <div class="f-col1">Monthly charge</div>
-          <div class="f-col2">
-            <strong>$0.00</strong>
-          </div>
-        </div>
-        <div class="f-row unmetered-plan">
-          <div class="f-col1">Selected plan</div>
-          <div class="f-col2">
-            <strong>Unlimited Beta</strong>
-          </div>
-        </div>
-        <div class="f-row unmetered-plan">
-          <div class="f-col1">Monthly charge</div>
-          <div class="f-col2">
-            <strong>$25.00</strong> Free trial until
-            1/18/2019
-          </div>
-        </div>
+        <script src="js/peerserver.js"></script>
 
-      </div>
+        <div id="register-modal" class="reveal-modal">
+          <a href="peerserver.html#" class="icon-remove close-reveal-modal"></a>
+          <h2>Register for PeerServer Cloud</h2>
+          <p class="error-msg"></p>
+          <div class="f-row">
+            <div class="f-col1">Name / Company name</div>
+            <div class="f-col2">
+              <input type="text" placeholder="Name / Company name" id="name">
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-col1">Email address</div>
+            <div class="f-col2">
+              <input type="text" placeholder="Email address" id="email">
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-col1">Password</div>
+            <div class="f-col2">
+              <input type="password" placeholder="Password" id="password">
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-col1">Confirm password</div>
+            <div class="f-col2">
+              <input type="password" placeholder="Confirm password" id="confirm">
+            </div>
+          </div>
+          <p></p>
+          <div class="f-row free-plan">
+            <div class="f-col1">Selected plan</div>
+            <div class="f-col2">
+              <strong>Free Developer</strong>
+            </div>
+          </div>
+          <div class="f-row free-plan">
+            <div class="f-col1">Monthly charge</div>
+            <div class="f-col2">
+              <strong>$0.00</strong>
+            </div>
+          </div>
+          <div class="f-row unmetered-plan">
+            <div class="f-col1">Selected plan</div>
+            <div class="f-col2">
+              <strong>Unlimited Beta</strong>
+            </div>
+          </div>
+          <div class="f-row unmetered-plan">
+            <div class="f-col1">Monthly charge</div>
+            <div class="f-col2">
+              <strong>$25.00</strong> Free trial until
+              1/18/2019
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>

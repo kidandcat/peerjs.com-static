@@ -3,9 +3,9 @@
 
 <head>
   <title>
-    
-      PeerJS - Simple peer-to-peer with WebRTC
-        
+
+    PeerJS - Simple peer-to-peer with WebRTC
+
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Language" content="en-us">
@@ -16,22 +16,17 @@ library peer js nodejs node javascript">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/fonts.css" rel="stylesheet" type="text/css">
   <link href="css/button.css" rel="stylesheet" type="text/css">
-  <link href="css/reveal.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900italic' rel='stylesheet' type='text/css'>
 
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.reveal.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/account.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
   <link rel="shortcut icon" href="media/favicon.ico.html" />
 </head>
 
 <body>
 
   <a href="https://github.com/peers" id="gh-link">
-    <img style="z-index: 9999;position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
-      alt="Fork me on GitHub">
+    <img style="z-index: 9999;position: absolute; top: 0; right: 0; border: 0;"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
   </a>
   <div id="container">
     <div id="nav-wrap">
@@ -40,63 +35,65 @@ library peer js nodejs node javascript">
         <span class="highlight">JS</span>
       </div>
       <div id="nav">
-        <a href="index.html" class="active"
-          >Home</a>
+        <a href="index.html" class="active">Home</a>
         <!-- Summary, ideas, brief status. -->
-        <a href="docs.html#start" >Get Started
+        <a href="docs.html#start">Get Started
         </a>
         <a href="docs.html#api">API Reference
         </a>
         <a href="examples.html">Examples
         </a>
         <!-- <a href="/examples" >Examples</a> -->
-        <a href="peerserver.html" >PeerServer Cloud</a>
-        <a href="team.html" >Team</a>
+        <a href="peerserver.html">PeerServer Cloud</a>
+        <a href="team.html">Team</a>
       </div>
       <div class="smbuttons">
-        <iframe src="https://ghbtns.com/github-btn.html?user=peers&repo=peerjs&type=watch&count=true" allowtransparency="true" frameborder="0"
-          scrolling="0" width="100" height="20"></iframe>
-        <a href="https://twitter.com/peerjsteam" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @peerjsteam</a>
+        <iframe src="https://ghbtns.com/github-btn.html?user=peers&repo=peerjs&type=watch&count=true"
+          allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+        <a href="https://twitter.com/peerjsteam" class="twitter-follow-button" data-show-count="false"
+          data-lang="en">Follow @peerjsteam</a>
       </div>
     </div>
     <div id="content">
       <div id="aux-nav">
-        
-    <div></div>
-    
+
+        <div></div>
+
       </div>
       <div id="text">
         <h2>The PeerJS library</h2>
-<p class="tagline">PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls.
-</p>
-<p>PeerJS wraps the browser's WebRTC implementation to provide a complete, configurable, and easy-to-use peer-to-peer connection
-  API. Equipped with nothing but an ID, a peer can create a P2P data or media stream connection to a remote peer.
+        <p class="tagline">PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls.
+        </p>
+        <p>PeerJS wraps the browser's WebRTC implementation to provide a complete, configurable, and easy-to-use
+          peer-to-peer connection
+          API. Equipped with nothing but an ID, a peer can create a P2P data or media stream connection to a remote
+          peer.
 
-  <h4>Downloads</h4>
-  <div class="downloads">
-    <a href="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js" download>
-      <div class="download beta">
-        Stable (
-        1.0.0)
-      </div>
-    </a>
-    <div class="clear"></div>
-  </div>
+          <h4>Downloads</h4>
+          <div class="downloads">
+            <a href="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js" download>
+              <div class="download beta">
+                Stable (
+                1.2.0)
+              </div>
+            </a>
+            <div class="clear"></div>
+          </div>
 
-  <h2>Setup</h2>
-  <h4>Include the library</h4>
-  <pre>
-&lt;script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"&gt;&lt;/script&gt;
+          <h2>Setup</h2>
+          <h4>Include the library</h4>
+          <pre>
+&lt;script src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"&gt;&lt;/script&gt;
 </pre>
 
-  <h4>Create a peer</h4>
-  <pre>
+          <h4>Create a peer</h4>
+          <pre>
 var peer = new Peer(); 
 </pre>
 
-  <h2>Data connections</h2>
-  <h4>Connect</h4>
-  <pre>
+          <h2>Data connections</h2>
+          <h4>Connect</h4>
+          <pre>
 var conn = peer.connect('another-peers-id');
 // on open will be launch when you successfully connect to PeerServer
 conn.on('open', function(){
@@ -104,8 +101,8 @@ conn.on('open', function(){
   conn.send('hi!');
 });
 </pre>
-  <h4>Receive</h4>
-  <pre>
+          <h4>Receive</h4>
+          <pre>
 peer.on('connection', function(conn) {
   conn.on('data', function(data){
     // Will print 'hi!'
@@ -114,9 +111,9 @@ peer.on('connection', function(conn) {
 });
 </pre>
 
-  <h2>Media calls</h2>
-  <h4>Call</h4>
-  <pre>
+          <h2>Media calls</h2>
+          <h4>Call</h4>
+          <pre>
 var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 getUserMedia({video: true, audio: true}, function(stream) {
   var call = peer.call('another-peers-id', stream);
@@ -127,8 +124,8 @@ getUserMedia({video: true, audio: true}, function(stream) {
   console.log('Failed to get local stream' ,err);
 });
 </pre>
-  <h4>Answer</h4>
-  <pre>
+          <h4>Answer</h4>
+          <pre>
 var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 peer.on('call', function(call) {
   getUserMedia({video: true, audio: true}, function(stream) {
@@ -143,35 +140,36 @@ peer.on('call', function(call) {
 </pre>
 
 
-  <h2>PeerServer</h2>
-  <p>To broker connections, PeerJS connects to a PeerServer. Note that no peer-to-peer data goes through the server; The
-    server acts only as a connection broker.
-  </p>
-  <h4>PeerServer Cloud</h4>
-  <p>If you don't want to run your own PeerServer, we offer a free cloud-hosted version of PeerServer.
-    <a href="peerserver.html">Official PeerServer!
-    </a>
-  </p>
-  <h4>Run your own</h4>
-  <p>
-    <a href="https://github.com/peers/peerjs-server">PeerServer is open source
-    </a> and is written in node.js. You can easily run your own.</p>
+          <h2>PeerServer</h2>
+          <p>To broker connections, PeerJS connects to a PeerServer. Note that no peer-to-peer data goes through the
+            server; The
+            server acts only as a connection broker.
+          </p>
+          <h4>PeerServer Cloud</h4>
+          <p>If you don't want to run your own PeerServer, we offer a free cloud-hosted version of PeerServer.
+            <a href="peerserver.html">Official PeerServer!
+            </a>
+          </p>
+          <h4>Run your own</h4>
+          <p>
+            <a href="https://github.com/peers/peerjs-server">PeerServer is open source
+            </a> and is written in node.js. You can easily run your own.</p>
 
 
-  <h2>Questions?</h2>
-  Please report any bugs you find on the
-  <a href="https://github.com/peers/peerjs/issues">Github issues page</a>.
-  <br/>
-  <br>
-  <a href="docs.html#start">
-    <div class="download">Get started!</div>
-  </a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <p>Cloud hosting powered by
-    <a href="https://www.ovh.com">OVH</a>.</p>
+          <h2>Questions?</h2>
+          Please report any bugs you find on the
+          <a href="https://github.com/peers/peerjs/issues">Github issues page</a>.
+          <br />
+          <br>
+          <a href="docs.html#start">
+            <div class="download">Get started!</div>
+          </a>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>Cloud hosting powered by
+            <a href="https://www.ovh.com">OVH</a>.</p>
       </div>
     </div>
   </div>

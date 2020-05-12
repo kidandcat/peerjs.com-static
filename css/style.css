@@ -258,13 +258,6 @@ ul li {
   line-height: 1.5em;
 }
 
-/*#content ul li {
-  display: block;
-  background-color: #f8f8f8;
-  padding: 3px 3px 3px 15px;
-  margin-top: 5px;
-}*/
-
 #text {
   width: 85%;
   padding: 0 20px;
@@ -273,7 +266,7 @@ ul li {
 
 .sign {
   font-weight: 900;
-  background-image: url(../media/logo.png.html);
+  background-image: url(../media/logo.png);
   background-repeat: no-repeat;
   background-position: right center;
   text-align: right;
@@ -285,7 +278,7 @@ ul li {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .sign {
-    background-image: url(../media/logo_big.png.html);
+    background-image: url(../media/logo_big.png);
   }
 }
 
@@ -654,8 +647,6 @@ input[type="password"]:focus {
 }
 .person .img {
   border-bottom: 4px solid #e96151;
-}
-.person .text {
 }
 
 .person .img {
